@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Weather Forecast</h1>
+    </header>
+    <main>
+      <section id="search">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Get Weather</button>
+      </section>
+
+      <section id="weatherDetails" style="display:none;">
+        <h2 id="cityName"></h2>
+        <div id="currentWeather">
+          <img id="weatherIcon" alt="Weather Icon" />
+          <p id="description"></p>
+          <div id="temperature">
+            <span id="tempValue"></span>°<span id="unit">C</span>
+            <button id="toggleUnit">Switch to °F</button>
+          </div>
+          <p>Min Temp: <span id="minTemp"></span>°</p>
+          <p>Max Temp: <span id="maxTemp"></span>°</p>
+          <p>Humidity: <span id="humidity"></span>%</p>
+          <p>Wind Speed: <span id="windSpeed"></span> m/s, Direction: <span id="windDir"></span></p>
+        </div>
+        <div id="forecast"></div>
+      </section>
+
+      <section id="error" style="display:none;"></section>
+    </main>
+
+    <footer>
+      <p>Powered by OpenWeatherMap</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
