@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>LOCAL WEATHER APP</h1>
+    </header>
+
+    <section class="intro">
+      <div id="time">
+        <span></span>
+      </div>
+      <div id="greeting"></div>
+
+    </section>
+
+    <main class="grid-container">
+
+      <div class="grid grid-1">
+      </div>
+
+      <div class=" grid grid-2">
+        <div id="weather-info"></div>
+        <img id="weather-icon" src="">
+      </div>
+
+      <div class="grid grid-3">
+        <div>
+          <button id="share">
+            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button id="refresh">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path d="M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23M6,12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-4">
+
+      </div>
+
+      <div class=" grid grid-5">
+        <p>
+          <span id="temp"></span>
+          <sup id="temp-unit">C</sup>
+        </p>
+      </div>
+
+      <div class="grid grid-6">
+        <button id="temp-convert">F</button>
+      </div>
+
+    </main>
+
+    <section class="misc-container">
+      <div class="misc ">
+        <p>Wind</p>
+        <p id="wind"></p>
+      </div>
+
+      <div>
+        <p>Humidity</p>
+        <p id="humidity"></p>
+      </div>
+
+      <div>
+        <p>Pressure</p>
+        <p id="pressure"></p>
+      </div>
+    </section>
+
+    <section id="modal">
+      <div id="share-modal">
+        <div class="modal-title">
+          <h3>Share</h3>
+          <span id="close-btn">&times;</span>
+        </div>
+        <div class="modal-content-group">
+          <div id="facebook" class="modal-content top">
+            <i class="fa fa-facebook"></i> Facebook</div>
+          <div class="border-top"></div>
+          <div id="twitter" class="modal-content bottom">
+            <i class="fa fa-twitter"></i> Twitter</div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="up">
+        <p>Designed with
+          <svg class="heart" width="24" height="24" viewBox="0 0 24 24">
+            <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+          </svg>
+        </p>
+      </div>
+      <div class="copyright down">
+        <p>&copy;2017
+          <span>
+            <a href="https://github.com/samakintunde37">SAMAKINTUNDE</a>
+          </span>
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>

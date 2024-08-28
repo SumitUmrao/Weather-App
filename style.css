@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #164480;
+  font-family: montserrat, helvetica, arial, sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background: linear-gradient(to right, #18a5dd, #164480);
+  box-shadow: #000000 0px 0px 5px 3px;
+}
+
+header {
+  background-color: #000000;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 25px;
+}
+
+main {
+  color: #ffffff;
+}
+
+.intro {
+  font-family: 'caviar dreams';
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#time {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#time span {
+  font-size: 14px;
+}
+
+#greeting {
+  font-size: 18px;
+}
+
+#weather-info {
+padding-bottom: 10px;
+padding-left: 10px;
+text-align: center;
+justify-content: center;
+}
+
+svg {
+fill: white;
+}
+
+.heart {
+fill: #ff3333;
+height: 1.2em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30%;
+  grid-gap: 1rem;
+justify-content: center;
+}
+
+main .grid {
+  margin-top: 20px;
+  height: 100%;
+}
+
+.grid-2 img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .grid-2 {
+  padding: 10px;
+}
+
+main .grid-3 {
+  margin: 0 auto;
+}
+
+main .grid-1, main .grid-3 {
+  text-align: center;
+  padding-top: 30%;
+}
+
+main .grid-6 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+main .grid-5 p, main .grid-5 sup {
+  margin: 0 auto;
+  text-align: center;
+}
+
+main .grid-5 sup {
+  font-size: 15px;
+  padding: 5px;
+}
+
+main #temp {
+  font-size: 40px;
+  padding-bottom: 5px;
+}
+
+
+
+main div button {
+  font-family: inherit;
+  background-color: #164480;
+  width: 40px;
+  border: none;
+  padding: 5px 10px;
+  margin: 3px;
+  color: #ffffff;
+}
+
+main div button:hover {
+  cursor: pointer;
+  background-color: #0f3563;
+  border-left: #ffffff solid 4px;
+  transition: all 0.15s ease-out;
+}
+
+.misc-container {
+  border-top: #ffffff solid 2px;
+  background: linear-gradient(to right, #18ddb2, #0b9675);
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 100%;
+  text-align: center;
+}
+
+#modal {
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  opacity: 0;
+}
+
+#modal.active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s;
+}
+
+#share-modal {
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  width: 10%;
+  margin: 5px auto;
+  height: 150px; 
+  position: absolute;
+  top: 37.5%;
+  bottom: 37.5%;
+  left: 25%;
+  right: 25%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 99;
+}
+
+#share-modal.active {
+  opacity: 1;
+  visibility: visible;
+  width: 50%;
+  transition: opacity 1s, width 1s;
+}
+
+.modal-title {
+  padding: 10px 10px;
+  background-color: #0f3563;
+  color: #ffffff;
+  height: 24px;
+  text-align: center;
+}
+
+.modal-title h3 {
+  float: left;
+  text-align: center;
+}
+
+.modal-title span {
+  float: right;
+  cursor: pointer;
+}
+
+.modal-title span:hover {
+  color: rgb(192, 60, 60);
+}
+
+.modal-content {
+  margin: 10px auto;
+  color: #333333;  
+}
+
+.modal-content-group .top, .modal-content-group .bottom {
+  cursor: pointer;
+}
+
+.modal-content-group .top:hover {
+  color: #164480;
+  font-size: 17px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-content-group .bottom:hover {
+  color: #18a5dd;
+  font-size: 17px;
+  transition: all 0.2s ease-in;
+}
+
+.modal-content-group {
+  padding: 10px;
+}
+
+.modal-content-group .border-top {
+  margin: 0 auto;
+  border-top: #333333 solid 1px;
+  width: 50%;
+}
+
+footer {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+footer div {
+  padding-top: 10px;
+}
+
+footer .fa {
+  padding: 0px 5px;
+}
+
+footer .fa-heart {
+  color: #dd4e4e;
+}
+
+footer .fa-music {
+  color: #164480
+}
+
+footer .copyright {
+  font-size: 12px;
+}
+
+footer .copyright span {
+  color: #18a5dd;
+}
